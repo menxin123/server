@@ -1,0 +1,14 @@
+*
+# add .gitignore
+!.gitignore
+# add config.yml
+!config.yml
+
+!plugins/
+
+!server/
+server/*
+!server/mods/
+server/mods/*
+# add mods.md
+!server/mods/mods.md
