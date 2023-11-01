@@ -12,3 +12,9 @@ server/*
 server/mods/*
 # add mods.md
 !server/mods/mods.md
+# add run.sh
+!server/run.sh
+!server/world/
+server/world/*
+# add carpet.conf
+!server/world/carpet.conf
