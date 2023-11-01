@@ -12,3 +12,5 @@ server/*
 server/mods/*
 # add mods.md
 !server/mods/mods.md
+# add run.sh
+!run.sh
