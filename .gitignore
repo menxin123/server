@@ -1,9 +1,12 @@
 *
+# add README
+!README.md
 # add .gitignore
 !.gitignore
 # add config.yml
 !config.yml
 
+# add MCDRplugins except cache
 !plugins/
 !plugins/**
 plugins/**/__pycache__
