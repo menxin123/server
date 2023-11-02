@@ -5,6 +5,8 @@
 !config.yml
 
 !plugins/
+!plugins/**
+plugins/**/__pycache__
 
 !server/
 server/*
