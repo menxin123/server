@@ -17,6 +17,10 @@
 * python 3.10及以上
 * MCDReforged(python module)
 * java 17
+* 记得输入一下命令以确保安装其他所需的python库
+```
+pip3 install -r requirements.txt
+```
   
 ## 使用方法  
 * 确保依赖安装完毕,并下载此仓库
