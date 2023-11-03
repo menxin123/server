@@ -23,3 +23,6 @@ server/mods/*
 server/world/*
 # add carpet.conf
 !server/world/carpet.conf
+
+# add requirements.txt
+!requirements.txt
