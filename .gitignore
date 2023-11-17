@@ -24,5 +24,9 @@ server/world/*
 # add carpet.conf
 !server/world/carpet.conf
 
+!server/world/scripts/
+server/world/scripts/*
+!server/world/scripts/waypoints.sc
+
 # add requirements.txt
 !requirements.txt
