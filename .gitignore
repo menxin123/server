@@ -27,6 +27,7 @@ server/world/*
 !server/world/scripts/
 server/world/scripts/*
 !server/world/scripts/waypoints.sc
+!server/world/scripts/freecamera.sc
 
 # add requirements.txt
 !requirements.txt
