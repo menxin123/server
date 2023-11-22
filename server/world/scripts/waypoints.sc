@@ -1,6 +1,7 @@
 __config() -> {
 
   'stay_loaded'-> true,
+  'scope' -> 'global',
 
   'commands' -> {
     'add <name>' -> ['add',null,null],
