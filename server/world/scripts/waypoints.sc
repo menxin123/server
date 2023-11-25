@@ -22,7 +22,7 @@ __config() -> {
 
     'waypointname' -> {
       'type' -> 'string',
-      'suggester' -> _(args) -> keys(global_waypoints),
+      'suggester' -> _(args) -> global_waypoints_name(),
     },
 
     'commit' -> {
@@ -43,6 +43,12 @@ if(
 
 //UTILS
 
+global_waypoints_name() -> (
+  res = [];
+  for(global_waypoints,res+=('"'+_+'"'));
+  res
+);
+
 _error(msg) ->(
   print(player(),format(str('r %s',msg)));
   exit()
@@ -57,13 +63,13 @@ waypointinfo(waypointname) -> (
   res = [];
 
   res += ' [ ';
-  res += str('!/waypoints del %s',waypointname);
-  res += str('^g /waypoints del %s',waypointname);
+  res += str('!/waypoints del "%s"',waypointname);
+  res += str('^g /waypoints del "%s"',waypointname);
   res += ' ] ';
 
   res += ' [ ';
-  res += str('!/waypoints tp %s',waypointname);
-  res += str('^g /waypoints tp %s',waypointname);
+  res += str('!/waypoints tp "%s"',waypointname);
+  res += str('^g /waypoints tp "%s"',waypointname);
   res += ' ] ';
 
   res += str('blu %d %d %d',global_waypoints:waypointname:'pos');
